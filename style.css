@@ -8,21 +8,6 @@
     color: white;
     cursor: pointer;
 }
-.sports{
-    padding: 15px;
-}
-.sports-list{
-    display: none;
-}
-.sports:hover .sports-list{
-    display: block;
-}
-.sports:hover{
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
 .Popular{
     background-color: white;
 }
