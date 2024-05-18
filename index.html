@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body style="margin: 0px; background-color: rgb(237, 237, 237);">
@@ -25,7 +26,7 @@
     flex: 1;
     height: 6.25%;">
         <div class="menu" style="display: flex; flex-direction: row; margin-left: 15px;">
-            <div class="menu-item" style="font-size: 18px;">HOME</div>
+            <div style="font-size: 18px; background-color: black; color: white; padding: 15px;">HOME</div>
             <div class="menu-item" style="font-size: 18px;">NEWS</div>
             <div class="menu-item" style="font-size: 18px;">WORLD</div>
             <div class="menu-item" style="font-size: 18px;">BUSINESS</div>
@@ -51,42 +52,42 @@
     </div>
     <div style="display: flex; flex-direction: row; margin-left: 20px; margin-right:20px ;flex: 1; column-gap: 25px;">
         <div style="width: 40%;  height: 500px; position: relative; border-radius: 10px;">
-            <img src="b1.jpg" width="100%" height="100%" style="z-index: 0; border-radius: 10px;">
+            <img src="b1.jpg" width="100%" height="100%" style="z-index: 0; border-radius: 10px;" id="img1">
             <div style="position: absolute; bottom: 20px; left: 13px; right: 13px; width: 1fr; z-index: 1; display: flex; flex-direction: column; flex: 1">
                 <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
-                    <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;">Culture</div>
-                    <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px; margin-left: 10px;">Featured</div>
+                    <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;">Featured</div>
+                    <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px; margin-left: 10px;" id="t1">Culture</div>
                 </div>
-                <div style=" font-size: 34px; color: white; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elites a...</div>
+                <div style=" font-size: 34px; color: white; margin-bottom: 10px;" id="title1">Lorem ipsum dolor sit amet consectetur, adipisicing elites a...</div>
                 <div style="display: flex; flex-direction: row;">
                     <div style="height: 18px; width: 18px;">
-                        <img src="img.jpg" height="100%" width="100%">
+                        <img src="img.jpg" height="100%" width="100%" id="img1">
                     </div>
-                    <div style="margin-left: 8px; color: white;">
+                    <div style="margin-left: 8px; color: white;" id="w1">
                         Lorem
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6" height="20px" style="margin-left: 25px;">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                     </svg>  
-                    <div style="margin-left: 8px; color: white; margin-top: 2px;">
+                    <div style="margin-left: 8px; color: white; margin-top: 2px;" id="d1">
                         March 7, 2022
                     </div>
                 </div>
             </div>
         </div>
         <div style="width: 19%; height: 500px; position: relative; border-radius: 10px;">
-            <img src="b2.jpg" width="100%" height="100%" style="border-radius: 10px;">
+            <img src="b2.jpg" width="100%" height="100%" style="border-radius: 10px;"  id="img2">
             <div style="position: absolute; bottom: 20px; left: 13px; right: 13px; width: 1fr; z-index: 1; display: flex; flex-direction: column; flex: 1">
                 <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
-                    <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;">Culture</div>
+                    <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;" id="t2">Culture</div>
                     <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px; margin-left: 10px;">Featured</div>
                 </div>
-                <div style=" font-size: 26px; color: white; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur...</div>
+                <div style=" font-size: 26px; color: white; margin-bottom: 10px;" id="title2">Lorem ipsum dolor sit amet consectetur...</div>
                 <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
                     <div style="height: 18px; width: 18px;">
                         <img src="img.jpg" height="100%" width="100%">
                     </div>
-                    <div style="margin-left: 8px; color: white;">
+                    <div style="margin-left: 8px; color: white;" id="w2">
                         Lorem
                     </div>
                 </div>
@@ -94,24 +95,24 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6" height="20px">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                     </svg>
-                    <div style="color: white; margin-left: 5px; margin-top: 2px;">March 7, 2022</div>
+                    <div style="color: white; margin-left: 5px; margin-top: 2px;" id="d2">March 7, 2022</div>
                 </div>
             </div>
         </div>
         <div style="width: 19%; height: 500px; display: flex; flex-direction: column; row-gap: 24px;">
-            <div style="height: 244px ;position: relative; border-radius: 10px;">
-                <img src="b3.jpg" width="100%" height="100%" style="border-radius: 10px;">
+            <div style="height: 244px ;position: relative; border-radius: 10px;" id="img3">
+                <img src="https://cdn.pixabay.com/photo/2023/03/28/18/28/hieroglyph-7883891_1280.jpg" width="100%" height="100%" style="border-radius: 10px;">
                 <div style="position: absolute; bottom: 20px; left: 13px; right: 13px; width: 1fr; z-index: 1; display: flex; flex-direction: column; flex: 1">
                     <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
-                        <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;">Culture</div>
+                        <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;" id="t3">Culture</div>
                         <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px; margin-left: 10px;">Featured</div>
                     </div>
-                    <div style=" font-size: 26px; color: white; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur...</div>
+                    <div style=" font-size: 26px; color: white; margin-bottom: 10px;" id="title3">Lorem ipsum dolor sit amet consectetur...</div>
                     <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
                         <div style="height: 18px; width: 18px;">
                             <img src="img.jpg" height="100%" width="100%">
                         </div>
-                        <div style="margin-left: 8px; color: white;">
+                        <div style="margin-left: 8px; color: white;" id="w3">
                             Lorem
                         </div>
                     </div>
@@ -119,23 +120,23 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6" height="20px">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                         </svg>
-                        <div style="color: white; margin-left: 5px; margin-top: 2px;">March 6, 2022</div>
+                        <div style="color: white; margin-left: 5px; margin-top: 2px;" id="d3">March 6, 2022</div>
                     </div>
                 </div>
             </div>
             <div style="height: 244px; position: relative; border-radius: 10px;">
-                <img src="b4.jpg" width="100%" height="100%" style="border-radius: 10px;">
+                <img src="b4.jpg" width="100%" height="100%" style="border-radius: 10px;" id="img4">
                 <div style="position: absolute; bottom: 20px; left: 13px; right: 13px; width: 1fr; z-index: 1; display: flex; flex-direction: column; flex: 1">
                     <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
-                        <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;">Culture</div>
+                        <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px;" id="t4">Culture</div>
                         <div style="background-color: black; color: white; border-radius: 10px; padding: 2px 6px 2px 6px; margin-left: 10px;">Featured</div>
                     </div>
-                    <div style=" font-size: 26px; color: white; margin-bottom: 10px;">Lorem ipsum dolor sit amet consectetur...</div>
+                    <div style=" font-size: 26px; color: white; margin-bottom: 10px;" id="title4">Lorem ipsum dolor sit amet consectetur...</div>
                     <div style="display: flex; flex-direction: row; margin-bottom: 10px;">
                         <div style="height: 18px; width: 18px;">
                             <img src="img.jpg" height="100%" width="100%">
                         </div>
-                        <div style="margin-left: 8px; color: white;">
+                        <div style="margin-left: 8px; color: white;" id="w4">
                             Lorem
                         </div>
                     </div>
@@ -143,7 +144,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6" height="20px">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                         </svg>
-                        <div style="color: white; margin-left: 5px; margin-top: 2px;">March 5, 2022</div>
+                        <div style="color: white; margin-left: 5px; margin-top: 2px;" id="d4">March 5, 2022</div>
                     </div>
                 </div>
             </div>
@@ -161,85 +162,85 @@
                 <div style="display: flex; flex-direction: column; row-gap: 12px;">
                     <div style="height: 100px; background-color: white; display: flex; flex-direction: row; column-gap: 15px;">
                         <div style="width: 80px; height: 80px; margin-top: 10px; margin-left: 10px; border-radius: 5px;">
-                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;">
+                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;" id="img5">
                         </div>
                         <div style="margin-top: 10px;margin-bottom: 10px ; width: 212px; display: flex; flex-direction: column;">
-                            <div style=" height: 1fr; margin-bottom: 10px; width: 100%; font-size: 24px;">Lorem ipsum dolor sit amet consecte...</div>
+                            <div style=" height: 1fr; margin-bottom: 6px; width: 100%; font-size: 17px;" id="title5">Lorem ipsum dolor sit amet consecte...</div>
                             <div style="display: flex; flex-direction: row;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#767676" class="w-6 h-6" height="16px">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;">March 5, 2022</div>
+                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;" id="d5">March 5, 2022</div>
                             </div>
                         </div>
                     </div>
                     <div style="height: 100px; background-color: white; display: flex; flex-direction: row; column-gap: 15px;">
                         <div style="width: 80px; height: 80px; margin-top: 10px; margin-left: 10px; border-radius: 5px;">
-                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;">
+                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;" id="img6">
                         </div>
                         <div style="margin-top: 10px;margin-bottom: 10px ; width: 212px; display: flex; flex-direction: column;">
-                            <div style=" height: 1fr; margin-bottom: 10px; width: 100%; font-size: 24px;">Lorem ipsum dolor sit amet consecte...</div>
+                            <div style=" height: 1fr; margin-bottom: 23px; width: 100%; font-size: 17px;" id="title6">Lorem ipsum dolor sit amet consecte...</div>
                             <div style="display: flex; flex-direction: row;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#767676" class="w-6 h-6" height="16px">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;">March 5, 2022</div>
+                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;" id="d6">March 5, 2022</div>
                             </div>
                         </div>
                     </div>
                     <div style="height: 100px; background-color: white; display: flex; flex-direction: row; column-gap: 15px;">
                         <div style="width: 80px; height: 80px; margin-top: 10px; margin-left: 10px; border-radius: 5px;">
-                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;">
+                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;" id="img7">
                         </div>
                         <div style="margin-top: 10px;margin-bottom: 10px ; width: 212px; display: flex; flex-direction: column;">
-                            <div style=" height: 1fr; margin-bottom: 10px; width: 100%; font-size: 24px;">Lorem ipsum dolor sit amet consecte...</div>
+                            <div style=" height: 1fr; margin-bottom: 6px; width: 100%; font-size: 17px;" id="title7">Lorem ipsum dolor sit amet consecte...</div>
                             <div style="display: flex; flex-direction: row;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#767676" class="w-6 h-6" height="16px">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;">March 5, 2022</div>
+                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;" id="d7">March 5, 2022</div>
                             </div>
                         </div>
                     </div>
                     <div style="height: 100px; background-color: white; display: flex; flex-direction: row; column-gap: 15px;">
                         <div style="width: 80px; height: 80px; margin-top: 10px; margin-left: 10px; border-radius: 5px;">
-                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;">
+                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;" id="img8">
                         </div>
                         <div style="margin-top: 10px;margin-bottom: 10px ; width: 212px; display: flex; flex-direction: column;">
-                            <div style=" height: 1fr; margin-bottom: 10px; width: 100%; font-size: 24px;">Lorem ipsum dolor sit amet consecte...</div>
+                            <div style=" height: 1fr; margin-bottom: 23px; width: 100%; font-size: 17px;" id="title8">Lorem ipsum dolor sit amet consecte...</div>
                             <div style="display: flex; flex-direction: row;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#767676" class="w-6 h-6" height="16px">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;">March 5, 2022</div>
+                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;" id="d8">March 5, 2022</div>
                             </div>
                         </div>
                     </div>
                     <div style="height: 100px; background-color: white; display: flex; flex-direction: row; column-gap: 15px;">
                         <div style="width: 80px; height: 80px; margin-top: 10px; margin-left: 10px; border-radius: 5px;">
-                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;">
+                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;" id="img9">
                         </div>
                         <div style="margin-top: 10px;margin-bottom: 10px ; width: 212px; display: flex; flex-direction: column;">
-                            <div style=" height: 1fr; margin-bottom: 10px; width: 100%; font-size: 24px;">Lorem ipsum dolor sit amet consecte...</div>
+                            <div style=" height: 1fr; margin-bottom: 23px; width: 100%; font-size: 17px;" id="title9">Lorem ipsum dolor sit amet consecte...</div>
                             <div style="display: flex; flex-direction: row;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#767676" class="w-6 h-6" height="16px">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;">March 5, 2022</div>
+                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;" id="d9">March 5, 2022</div>
                             </div>
                         </div>
                     </div>
                     <div style="height: 100px; background-color: white; display: flex; flex-direction: row; column-gap: 15px;">
                         <div style="width: 80px; height: 80px; margin-top: 10px; margin-left: 10px; border-radius: 5px;">
-                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;">
+                            <img src="l1.png" width="100%" height="100%" style="border-radius: 5px;" id="img10">
                         </div>
                         <div style="margin-top: 10px;margin-bottom: 10px ; width: 212px; display: flex; flex-direction: column;">
-                            <div style=" height: 1fr; margin-bottom: 10px; width: 100%; font-size: 24px;">Lorem ipsum dolor sit amet consecte...</div>
+                            <div style=" height: 1fr; margin-bottom: 23px; width: 100%; font-size: 17px;" id="title10">Lorem ipsum dolor sit amet consecte...</div>
                             <div style="display: flex; flex-direction: row;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#767676" class="w-6 h-6" height="16px">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
                                 </svg>
-                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;">March 5, 2022</div>
+                                <div style="color: #767676; margin-left: 5px;margin-top: 1px; font-size: 14px;" id="d10">March 5, 2022</div>
                             </div>
                         </div>
                     </div>
